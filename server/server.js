@@ -19,7 +19,18 @@ console.log(doc);
 }, (e)  => {
   res.status(400).send(e);
 });
-}   );
+});
+app.get('/todos', (req, res) => {
+  Todo.find().then((todos) => {
+    res.send({todos});
+    console.log(todos);
+  }, (error) => {
+    res.status(400).send(error);
+  })
+});
+
 app.listen(3000,  () => {
   console.log('Server is started 3000');
 });
+
+module.exports= {app};
