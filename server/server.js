@@ -6,7 +6,7 @@ var {Todo} = require('./models/todos');
 var {Users} = require('./models/users');
 
 var app =express();
-
+var port = process.env.PORT | |  3000;
 app.use(bodyParser.json());
 //setting the route , for creating request it has to use post http request
 app.post('/todos', (req, res) =>{
@@ -46,7 +46,7 @@ app.get('/todos/:id', (req, res) => {
   // console.log(req.params);
 });
 app.listen(3000,  () => {
-  console.log('Server is started 3000');
+  console.log(`Server is started on ${port}`);
 });
 
 module.exports= {app};
