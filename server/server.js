@@ -6,7 +6,7 @@ var {Todo} = require('./models/todos');
 var {Users} = require('./models/users');
 
 var app =express();
-var port = process.env.PORT | |  3000;
+const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 //setting the route , for creating request it has to use post http request
 app.post('/todos', (req, res) =>{
