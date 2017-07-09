@@ -1,0 +1,102 @@
+$ heroku logs
+2017-07-08T04:07:24.482534+00:00 app[web.1]:
+2017-07-08T04:07:24.482555+00:00 app[web.1]: > todos-api@1.0.0 start /app
+2017-07-08T04:07:24.482556+00:00 app[web.1]: > node server/server.js
+2017-07-08T04:07:24.482556+00:00 app[web.1]:
+2017-07-08T04:07:24.546404+00:00 app[web.1]: /app/server/server.js:9
+2017-07-08T04:07:24.546407+00:00 app[web.1]: var port = process.env.PORT | |  3000;
+2017-07-08T04:07:24.546409+00:00 app[web.1]:
+2017-07-08T04:07:24.546408+00:00 app[web.1]:                               ^
+2017-07-08T04:07:24.546409+00:00 app[web.1]: SyntaxError: Unexpected token |
+2017-07-08T04:07:24.546410+00:00 app[web.1]:     at createScript (vm.js:74:10)
+2017-07-08T04:07:24.546411+00:00 app[web.1]:     at Object.runInThisContext (vm.js:116:10)
+2017-07-08T04:07:24.546411+00:00 app[web.1]:     at Module._compile (module.js:533:28)
+2017-07-08T04:07:24.546412+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:580:10)
+2017-07-08T04:07:24.546412+00:00 app[web.1]:     at Module.load (module.js:503:32)
+2017-07-08T04:07:24.546413+00:00 app[web.1]:     at tryModuleLoad (module.js:466:12)
+2017-07-08T04:07:24.546416+00:00 app[web.1]:     at Function.Module._load (module.js:458:3)
+2017-07-08T04:07:24.546417+00:00 app[web.1]:     at startup (bootstrap_node.js:158:16)
+2017-07-08T04:07:24.546418+00:00 app[web.1]:     at bootstrap_node.js:575:3
+2017-07-08T04:07:24.546417+00:00 app[web.1]:     at Function.Module.runMain (module.js:605:10)
+2017-07-08T04:07:24.555781+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-07-08T04:07:24.555920+00:00 app[web.1]: npm ERR! errno 1
+2017-07-08T04:07:24.556023+00:00 app[web.1]: npm ERR! todos-api@1.0.0 start: `node server/server.js`
+2017-07-08T04:07:24.556165+00:00 app[web.1]: npm ERR!
+2017-07-08T04:07:24.556082+00:00 app[web.1]: npm ERR! Exit status 1
+2017-07-08T04:07:24.556314+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-07-08T04:07:24.556242+00:00 app[web.1]: npm ERR! Failed at the todos-api@1.0.0 start script.
+2017-07-08T04:07:24.557152+00:00 app[web.1]:
+2017-07-08T04:07:24.557274+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-07-08T04:07:24.557323+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-07-08T04_07_24_553Z-debug.log
+2017-07-08T04:07:24.654378+00:00 heroku[web.1]: Process exited with status 1
+2017-07-08T04:07:24.673862+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-08T04:17:16.732703+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-08T04:17:16.223474+00:00 app[api]: Attach MONGOLAB_JADE (@ref:mongolab-sinuous-45363) by user pratap7684@gmail.com
+2017-07-08T04:17:16.223474+00:00 app[api]: Release v6 created by user pratap7684@gmail.com
+2017-07-08T04:17:18.805760+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-07-08T04:17:21.013944+00:00 app[web.1]:
+2017-07-08T04:17:21.013964+00:00 app[web.1]: > todos-api@1.0.0 start /app
+2017-07-08T04:17:21.013965+00:00 app[web.1]: > node server/server.js
+2017-07-08T04:17:21.013965+00:00 app[web.1]:
+2017-07-08T04:17:21.091784+00:00 app[web.1]: /app/server/server.js:9
+2017-07-08T04:17:21.091787+00:00 app[web.1]: var port = process.env.PORT | |  3000;
+2017-07-08T04:17:21.091787+00:00 app[web.1]:                               ^
+2017-07-08T04:17:21.091788+00:00 app[web.1]:
+2017-07-08T04:17:21.091788+00:00 app[web.1]: SyntaxError: Unexpected token |
+2017-07-08T04:17:21.091789+00:00 app[web.1]:     at createScript (vm.js:74:10)
+2017-07-08T04:17:21.091789+00:00 app[web.1]:     at Object.runInThisContext (vm.js:116:10)
+2017-07-08T04:17:21.091789+00:00 app[web.1]:     at Module._compile (module.js:533:28)
+2017-07-08T04:17:21.091790+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:580:10)
+2017-07-08T04:17:21.091790+00:00 app[web.1]:     at Module.load (module.js:503:32)
+2017-07-08T04:17:21.091791+00:00 app[web.1]:     at tryModuleLoad (module.js:466:12)
+2017-07-08T04:17:21.091791+00:00 app[web.1]:     at Function.Module._load (module.js:458:3)
+2017-07-08T04:17:21.091792+00:00 app[web.1]:     at Function.Module.runMain (module.js:605:10)
+2017-07-08T04:17:21.091792+00:00 app[web.1]:     at startup (bootstrap_node.js:158:16)
+2017-07-08T04:17:21.091792+00:00 app[web.1]:     at bootstrap_node.js:575:3
+2017-07-08T04:17:21.104101+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-07-08T04:17:21.104289+00:00 app[web.1]: npm ERR! errno 1
+2017-07-08T04:17:21.104381+00:00 app[web.1]: npm ERR! todos-api@1.0.0 start: `node server/server.js`
+2017-07-08T04:17:21.104442+00:00 app[web.1]: npm ERR! Exit status 1
+2017-07-08T04:17:21.104515+00:00 app[web.1]: npm ERR!
+2017-07-08T04:17:21.104583+00:00 app[web.1]: npm ERR! Failed at the todos-api@1.0.0 start script.
+2017-07-08T04:17:21.104657+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2017-07-08T04:17:21.105556+00:00 app[web.1]:
+2017-07-08T04:17:21.105663+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2017-07-08T04:17:21.105710+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2017-07-08T04_17_21_099Z-debug.log
+2017-07-08T04:17:21.182460+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-08T04:17:21.170312+00:00 heroku[web.1]: Process exited with status 1
+2017-07-08T04:17:55.000000+00:00 app[api]: Build started by user pratap7684@gmail.com
+2017-07-08T04:18:03.709558+00:00 app[api]: Release v7 created by user pratap7684@gmail.com
+2017-07-08T04:18:03.709558+00:00 app[api]: Deploy f5698ac1 by user pratap7684@gmail.com
+2017-07-08T04:17:55.000000+00:00 app[api]: Build succeeded
+2017-07-08T04:18:05.500805+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-08T04:18:07.365884+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-07-08T04:18:10.342359+00:00 app[web.1]:
+2017-07-08T04:18:10.342371+00:00 app[web.1]: > todos-api@1.0.0 start /app
+2017-07-08T04:18:10.342372+00:00 app[web.1]: > node server/server.js
+2017-07-08T04:18:10.342373+00:00 app[web.1]:
+2017-07-08T04:18:11.223444+00:00 app[web.1]: (node:17) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-07-08T04:18:11.226054+00:00 app[web.1]: Server is started on 42003
+2017-07-08T04:18:11.255917+00:00 app[web.1]: Db.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+2017-07-08T04:19:07.409832+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2017-07-08T04:19:07.409914+00:00 heroku[web.1]: Stopping process with SIGKILL
+2017-07-08T04:19:07.521839+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-08T04:19:07.522736+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-08T04:19:07.507488+00:00 heroku[web.1]: Process exited with status 137
+2017-07-08T04:19:09.214232+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-07-08T04:19:11.546419+00:00 app[web.1]:
+2017-07-08T04:19:11.546435+00:00 app[web.1]: > todos-api@1.0.0 start /app
+2017-07-08T04:19:11.546436+00:00 app[web.1]: > node server/server.js
+2017-07-08T04:19:11.546437+00:00 app[web.1]:
+2017-07-08T04:19:12.105615+00:00 app[web.1]: (node:17) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+2017-07-08T04:19:12.107169+00:00 app[web.1]: Server is started on 38249
+2017-07-08T04:19:12.126974+00:00 app[web.1]: Db.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
+2017-07-08T04:19:44.089269+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=thawing-sierra-87824.herokuapp.com request_id=f4f2381b-4cae-4779-a02f-46aa5f40f88f fwd="116.75.153.27" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-08T04:20:09.656766+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2017-07-08T04:20:09.656766+00:00 heroku[web.1]: Stopping process with SIGKILL
+2017-07-08T04:20:09.761478+00:00 heroku[web.1]: Process exited with status 137
+2017-07-08T04:20:09.779734+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-08T04:20:11.709545+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-sierra-87824.herokuapp.com request_id=b4b2d52d-e88f-4d1a-9c69-7f65b4192939 fwd="116.75.153.27" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-08T04:20:12.548237+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-sierra-87824.herokuapp.com request_id=3b1a1e2f-e8e3-4db2-b6d9-7fc92ad5c35e fwd="116.75.153.27" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-08T04:26:57.021916+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/todos" host=thawing-sierra-87824.herokuapp.com request_id=f930b736-ae38-4280-80b7-aa06753d5277 fwd="116.75.153.27" dyno= connect= service= status=503 bytes= protocol=https
+2017-07-08T04:26:57.381988+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-sierra-87824.herokuapp.com request_id=8a6111a2-0add-4383-bae1-77f1691eb046 fwd="116.75.153.27" dyno= connect= service= status=503 bytes= protocol=https
